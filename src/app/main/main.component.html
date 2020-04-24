@@ -1,0 +1,14 @@
+<app-control>
+</app-control>
+
+<div class="content">
+    <img class="loser" *ngIf="ServService.showLose" src='./../assets/img/loser.gif'>
+    <div *ngIf="!ServService.showLose" id="circle">
+        <button type="button" id="start" (click)="ServService.runGame()" (click)="ServService.buttonClick.play()"
+            class="btn btn4 round4" *ngIf="ServService.hideStartButton">Start</button>
+        <div [@fade]='this.colorBlock[i].animate' *ngFor="let color of colorBlock; let i = index"
+            class="color {{color.color}}"
+            (click)="ServService.clickMulti&&ServService.playingAuth&&ServService.addPlayerChoise(i)">
+        </div>
+    </div>
+</div>

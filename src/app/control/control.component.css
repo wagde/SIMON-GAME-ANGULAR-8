@@ -1,0 +1,16 @@
+.header-cont{
+
+color: wheat;
+}
+header{
+    width: 100%;
+   height: 50px;
+    background-color: black;
+}
+
+header p{
+  align-items: center;
+  margin: auto;
+  text-align: center;
+
+}
